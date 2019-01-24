@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD278EFE21F13D5200750F48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278EFD21F13D5200750F48 /* AppDelegate.swift */; };
+		AD278F0021F13D5200750F48 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278EFF21F13D5200750F48 /* NoticeViewController.swift */; };
+		AD278F0321F13D5200750F48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD278F0121F13D5200750F48 /* Main.storyboard */; };
+		AD278F0621F13D5200750F48 /* Viper_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD278F0421F13D5200750F48 /* Viper_Demo.xcdatamodeld */; };
+		AD278F0821F13D5200750F48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD278F0721F13D5200750F48 /* Assets.xcassets */; };
+		AD278F0B21F13D5300750F48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD278F0921F13D5300750F48 /* LaunchScreen.storyboard */; };
+		AD278F1821F1499200750F48 /* NoticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F1721F1499200750F48 /* NoticeRouter.swift */; };
+		AD278F1C21F25B8A00750F48 /* NoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F1B21F25B8A00750F48 /* NoticePresenter.swift */; };
+		AD278F2121F25EE800750F48 /* NoticeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F2021F25EE800750F48 /* NoticeProtocols.swift */; };
+		AD278F2321F25F0500750F48 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F2221F25F0500750F48 /* NoticeModel.swift */; };
+		AD278F2521F25F2200750F48 /* NoticeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F2421F25F2200750F48 /* NoticeInteractor.swift */; };
+		AD278F2A21F2631200750F48 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F2921F2631200750F48 /* AppConstants.swift */; };
+		AD278F3521F7B13200750F48 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F3421F7B13100750F48 /* MovieViewController.swift */; };
+		AD278F3721F7B69F00750F48 /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F3621F7B69F00750F48 /* MovieRouter.swift */; };
+		AD278F3921F7B6BF00750F48 /* MovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F3821F7B6BF00750F48 /* MovieProtocols.swift */; };
+		AD278F3B21F7B72600750F48 /* MovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F3A21F7B72600750F48 /* MovieInteractor.swift */; };
+		AD278F3E21F7B73E00750F48 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F3D21F7B73E00750F48 /* MoviePresenter.swift */; };
+		AD278F4121F7D86B00750F48 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD278F4021F7D86B00750F48 /* MovieModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AD278EFA21F13D5200750F48 /* Viper Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD278EFD21F13D5200750F48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD278EFF21F13D5200750F48 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		AD278F0221F13D5200750F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD278F0521F13D5200750F48 /* Viper_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viper_Demo.xcdatamodel; sourceTree = "<group>"; };
+		AD278F0721F13D5200750F48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD278F0A21F13D5300750F48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD278F0C21F13D5300750F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD278F1721F1499200750F48 /* NoticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRouter.swift; sourceTree = "<group>"; };
+		AD278F1B21F25B8A00750F48 /* NoticePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePresenter.swift; sourceTree = "<group>"; };
+		AD278F2021F25EE800750F48 /* NoticeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeProtocols.swift; sourceTree = "<group>"; };
+		AD278F2221F25F0500750F48 /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		AD278F2421F25F2200750F48 /* NoticeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeInteractor.swift; sourceTree = "<group>"; };
+		AD278F2921F2631200750F48 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AD278F3421F7B13100750F48 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		AD278F3621F7B69F00750F48 /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
+		AD278F3821F7B6BF00750F48 /* MovieProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProtocols.swift; sourceTree = "<group>"; };
+		AD278F3A21F7B72600750F48 /* MovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInteractor.swift; sourceTree = "<group>"; };
+		AD278F3D21F7B73E00750F48 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		AD278F4021F7D86B00750F48 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD278EF721F13D5200750F48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD278EF121F13D5200750F48 = {
+			isa = PBXGroup;
+			children = (
+				AD278EFC21F13D5200750F48 /* Viper Demo */,
+				AD278EFB21F13D5200750F48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD278EFB21F13D5200750F48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD278EFA21F13D5200750F48 /* Viper Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD278EFC21F13D5200750F48 /* Viper Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2821F262F100750F48 /* common-utils */,
+				AD278F1421F1493500750F48 /* app-modules */,
+				AD278F1321F1492200750F48 /* app-delegate */,
+				AD278F1221F1490500750F48 /* app-ui */,
+				AD278F0721F13D5200750F48 /* Assets.xcassets */,
+				AD278F0C21F13D5300750F48 /* Info.plist */,
+				AD278F0421F13D5200750F48 /* Viper_Demo.xcdatamodeld */,
+			);
+			path = "Viper Demo";
+			sourceTree = "<group>";
+		};
+		AD278F1221F1490500750F48 /* app-ui */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F0921F13D5300750F48 /* LaunchScreen.storyboard */,
+				AD278F0121F13D5200750F48 /* Main.storyboard */,
+			);
+			path = "app-ui";
+			sourceTree = "<group>";
+		};
+		AD278F1321F1492200750F48 /* app-delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AD278EFD21F13D5200750F48 /* AppDelegate.swift */,
+			);
+			path = "app-delegate";
+			sourceTree = "<group>";
+		};
+		AD278F1421F1493500750F48 /* app-modules */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2E21F7B09200750F48 /* movie-module */,
+				AD278F2D21F7B07400750F48 /* notice-module */,
+			);
+			path = "app-modules";
+			sourceTree = "<group>";
+		};
+		AD278F1521F1495000750F48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD278EFF21F13D5200750F48 /* NoticeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD278F1621F1495E00750F48 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F1721F1499200750F48 /* NoticeRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		AD278F1A21F25B4A00750F48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F1B21F25B8A00750F48 /* NoticePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD278F1D21F25C9200750F48 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2421F25F2200750F48 /* NoticeInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		AD278F1E21F25D1400750F48 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2221F25F0500750F48 /* NoticeModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		AD278F1F21F25D3300750F48 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2021F25EE800750F48 /* NoticeProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		AD278F2821F262F100750F48 /* common-utils */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F2921F2631200750F48 /* AppConstants.swift */,
+			);
+			path = "common-utils";
+			sourceTree = "<group>";
+		};
+		AD278F2D21F7B07400750F48 /* notice-module */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F1521F1495000750F48 /* View */,
+				AD278F1621F1495E00750F48 /* router */,
+				AD278F1A21F25B4A00750F48 /* Presenter */,
+				AD278F1D21F25C9200750F48 /* interactor */,
+				AD278F1E21F25D1400750F48 /* entity */,
+				AD278F1F21F25D3300750F48 /* protocols */,
+			);
+			path = "notice-module";
+			sourceTree = "<group>";
+		};
+		AD278F2E21F7B09200750F48 /* movie-module */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3F21F7D85100750F48 /* entity */,
+				AD278F3321F7B0CE00750F48 /* router */,
+				AD278F3221F7B0BF00750F48 /* protocols */,
+				AD278F3121F7B0AF00750F48 /* Interactor */,
+				AD278F3021F7B0A600750F48 /* Presenter */,
+				AD278F2F21F7B0A000750F48 /* View */,
+			);
+			path = "movie-module";
+			sourceTree = "<group>";
+		};
+		AD278F2F21F7B0A000750F48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3421F7B13100750F48 /* MovieViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD278F3021F7B0A600750F48 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3D21F7B73E00750F48 /* MoviePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AD278F3121F7B0AF00750F48 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3A21F7B72600750F48 /* MovieInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AD278F3221F7B0BF00750F48 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3821F7B6BF00750F48 /* MovieProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		AD278F3321F7B0CE00750F48 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F3621F7B69F00750F48 /* MovieRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		AD278F3F21F7D85100750F48 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				AD278F4021F7D86B00750F48 /* MovieModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD278EF921F13D5200750F48 /* Viper Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD278F0F21F13D5300750F48 /* Build configuration list for PBXNativeTarget "Viper Demo" */;
+			buildPhases = (
+				AD278EF621F13D5200750F48 /* Sources */,
+				AD278EF721F13D5200750F48 /* Frameworks */,
+				AD278EF821F13D5200750F48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Viper Demo";
+			productName = "Viper Demo";
+			productReference = AD278EFA21F13D5200750F48 /* Viper Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD278EF221F13D5200750F48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Chinny Ponnoose";
+				TargetAttributes = {
+					AD278EF921F13D5200750F48 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = AD278EF521F13D5200750F48 /* Build configuration list for PBXProject "Viper Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD278EF121F13D5200750F48;
+			productRefGroup = AD278EFB21F13D5200750F48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD278EF921F13D5200750F48 /* Viper Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD278EF821F13D5200750F48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD278F0B21F13D5300750F48 /* LaunchScreen.storyboard in Resources */,
+				AD278F0821F13D5200750F48 /* Assets.xcassets in Resources */,
+				AD278F0321F13D5200750F48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD278EF621F13D5200750F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD278F2321F25F0500750F48 /* NoticeModel.swift in Sources */,
+				AD278F3521F7B13200750F48 /* MovieViewController.swift in Sources */,
+				AD278F2A21F2631200750F48 /* AppConstants.swift in Sources */,
+				AD278F3E21F7B73E00750F48 /* MoviePresenter.swift in Sources */,
+				AD278F1C21F25B8A00750F48 /* NoticePresenter.swift in Sources */,
+				AD278F3B21F7B72600750F48 /* MovieInteractor.swift in Sources */,
+				AD278F3921F7B6BF00750F48 /* MovieProtocols.swift in Sources */,
+				AD278F2121F25EE800750F48 /* NoticeProtocols.swift in Sources */,
+				AD278F1821F1499200750F48 /* NoticeRouter.swift in Sources */,
+				AD278F0021F13D5200750F48 /* NoticeViewController.swift in Sources */,
+				AD278F0621F13D5200750F48 /* Viper_Demo.xcdatamodeld in Sources */,
+				AD278F2521F25F2200750F48 /* NoticeInteractor.swift in Sources */,
+				AD278F4121F7D86B00750F48 /* MovieModel.swift in Sources */,
+				AD278F3721F7B69F00750F48 /* MovieRouter.swift in Sources */,
+				AD278EFE21F13D5200750F48 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AD278F0121F13D5200750F48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD278F0221F13D5200750F48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD278F0921F13D5300750F48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD278F0A21F13D5300750F48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD278F0D21F13D5300750F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD278F0E21F13D5300750F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD278F1021F13D5300750F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "exilant.Viper-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD278F1121F13D5300750F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Viper Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "exilant.Viper-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD278EF521F13D5200750F48 /* Build configuration list for PBXProject "Viper Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD278F0D21F13D5300750F48 /* Debug */,
+				AD278F0E21F13D5300750F48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD278F0F21F13D5300750F48 /* Build configuration list for PBXNativeTarget "Viper Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD278F1021F13D5300750F48 /* Debug */,
+				AD278F1121F13D5300750F48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD278F0421F13D5200750F48 /* Viper_Demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD278F0521F13D5200750F48 /* Viper_Demo.xcdatamodel */,
+			);
+			currentVersion = AD278F0521F13D5200750F48 /* Viper_Demo.xcdatamodel */;
+			path = Viper_Demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD278EF221F13D5200750F48 /* Project object */;
+}
